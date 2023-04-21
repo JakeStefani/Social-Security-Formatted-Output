@@ -1,0 +1,16 @@
+user_name = input()
+ssn = int(input())
+
+ssn3 = (ssn // 1000000)
+ssn_temp = (ssn // 10000)
+ssn2 = (ssn_temp % 100)
+ssn4 = (ssn % 10000)
+
+print("++++        NAME        ++++     SSN      ++++")
+print("----------------------------------------------")
+print("++++", f'{user_name:^19}', end="")
+print("++++", f'{ssn3:0>3}', end="")
+print("-", end="")
+print(f'{ssn2:0>2}', end="")
+print("-", end="")
+print(f'{ssn4:0>4}', " ++++")
